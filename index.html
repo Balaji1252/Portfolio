@@ -264,70 +264,88 @@
             --wp--preset--spacing--70: 3.38rem;
             --wp--preset--spacing--80: 5.06rem;
         }
+
         :where(.is-layout-flex) {
             gap: 0.5em;
         }
+
         body .is-layout-flow>.alignleft {
             float: left;
             margin-inline-start: 0;
             margin-inline-end: 2em;
         }
+
         body .is-layout-flow>.alignright {
             float: right;
             margin-inline-start: 2em;
             margin-inline-end: 0;
         }
+
         body .is-layout-flow>.aligncenter {
             margin-left: auto !important;
             margin-right: auto !important;
         }
+
         body .is-layout-constrained>.alignleft {
             float: left;
             margin-inline-start: 0;
             margin-inline-end: 2em;
         }
+
         body .is-layout-constrained>.alignright {
             float: right;
             margin-inline-start: 2em;
             margin-inline-end: 0;
         }
+
         body .is-layout-constrained>.aligncenter {
             margin-left: auto !important;
             margin-right: auto !important;
         }
+
         body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
             max-width: var(--wp--style--global--content-size);
             margin-left: auto !important;
             margin-right: auto !important;
         }
+
         body .is-layout-constrained>.alignwide {
             max-width: var(--wp--style--global--wide-size);
         }
+
         body .is-layout-flex {
             display: flex;
         }
+
         body .is-layout-flex {
             flex-wrap: wrap;
             align-items: center;
         }
+
         body .is-layout-flex>* {
             margin: 0;
         }
+
         :where(.wp-block-columns.is-layout-flex) {
             gap: 2em;
         }
+
         .has-black-color {
             color: var(--wp--preset--color--black) !important;
         }
+
         .has-cyan-bluish-gray-color {
             color: var(--wp--preset--color--cyan-bluish-gray) !important;
         }
+
         .has-white-color {
             color: var(--wp--preset--color--white) !important;
         }
+
         .has-pale-pink-color {
             color: var(--wp--preset--color--pale-pink) !important;
         }
+
         .has-vivid-red-color {
             color: var(--wp--preset--color--vivid-red) !important;
         }
@@ -537,12 +555,15 @@
         .ext-absolute {
             position: absolute !important;
         }
+
         .ext-relative {
             position: relative !important;
         }
+
         .ext-top-base {
             top: var(--wp--style--block-gap, 1.75rem) !important;
         }
+
         .ext-top-lg {
             top: var(--extendify--spacing--large, 3rem) !important;
         }
@@ -1633,6 +1654,7 @@
             -webkit-clip-path: polygon(14% 9%, 85% 24%, 91% 89%, 19% 76%) !important;
             clip-path: polygon(14% 9%, 85% 24%, 91% 89%, 19% 76%) !important;
         }
+
         .wp-block-columns[class*="fullwidth-cols"] {
             margin-bottom: unset !important;
         }
@@ -1663,8 +1685,7 @@
         }
 
         [class*="fullwidth-cols"] .wp-block-column:first-child,
-        [class*="fullwidth-cols"] .wp-block-group:first-child {
-        }
+        [class*="fullwidth-cols"] .wp-block-group:first-child {}
 
         [class*="fullwidth-cols"] .wp-block-column:first-child,
         [class*="fullwidth-cols"] .wp-block-group:first-child {
@@ -1672,8 +1693,7 @@
         }
 
         [class*="fullwidth-cols"] .wp-block-column:last-child,
-        [class*="fullwidth-cols"] .wp-block-group:last-child {
-        }
+        [class*="fullwidth-cols"] .wp-block-group:last-child {}
 
         [class*="fullwidth-cols"] .wp-block-column:last-child,
         [class*="fullwidth-cols"] .wp-block-group:last-child {
@@ -1779,8 +1799,7 @@
             }
         }
 
-        .is-style-inline-list li:first-child {
-        }
+        .is-style-inline-list li:first-child {}
 
         @media (min-width: 782px) {
             .is-style-inline-list li:first-child {
@@ -1788,8 +1807,7 @@
             }
         }
 
-        .is-style-inline-list li:last-child {
-        }
+        .is-style-inline-list li:last-child {}
 
         @media (min-width: 782px) {
             .is-style-inline-list li:last-child {
@@ -2133,8 +2151,7 @@
         }
 
         .ext *[class*="inner-container"]>.alignwide *[class*="inner-container"]>*,
-        .ext *[class*="inner-container"]>[data-align="wide"] *[class*="inner-container"]>* {
-        }
+        .ext *[class*="inner-container"]>[data-align="wide"] *[class*="inner-container"]>* {}
 
         .ext *[class*="inner-container"]>.alignwide *[class*="inner-container"]>*,
         .ext *[class*="inner-container"]>[data-align="wide"] *[class*="inner-container"]>* {
@@ -2199,34 +2216,26 @@
         }
 
         .block-editor-block-preview__content-iframe .preview\:min-h-70 {
-            /* no suggestion */
             min-height: 70vw !important;
         }
 
         .block-editor-block-preview__content-iframe .preview\:min-h-80 {
-            /* no suggestion */
             min-height: 80vw !important;
         }
 
         .block-editor-block-preview__content-iframe .preview\:min-h-100 {
-            /* no suggestion */
             min-height: 100vw !important;
         }
 
-        /*  Removes excess margin when applied to the alignfull parent div in Block Themes */
         .ext-mr-0.alignfull:not([style*="margin"]):not([style*="margin"]) {
-            /* no suggestion */
             margin-right: 0 !important;
         }
 
         .ext-ml-0:not([style*="margin"]):not([style*="margin"]) {
-            /* no suggestion */
             margin-left: 0 !important;
         }
 
-        /*  Ensures fullwidth blocks display properly in the editor when margin is zeroed out */
         .is-root-container .wp-block[data-align="full"]>.ext-mx-0:not([style*="margin"]):not([style*="margin"]) {
-            /* no suggestion */
             margin-right: calc(1 * var(--wp--custom--spacing--outer, 0)) !important;
             margin-left: calc(1 * var(--wp--custom--spacing--outer, 0)) !important;
             overflow: hidden !important;
@@ -3441,15 +3450,11 @@
             }
         }
     </style>
-    <!-- <link rel='stylesheet' id='contact-form-7-css' href='https://rainbowit.net/themes/inbio/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6.4' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='woocommerce-layout-css' href='https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=7.1.0' type='text/css' media='all' /> -->
     <link rel="stylesheet" type="text/css"
         href="//rainbowit.net/themes/inbio/wp-content/cache/wpfc-minified/fe1gjieb/44qc8.css" media="all" />
-    <!-- <link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=7.1.0' type='text/css' media='only screen and (max-width: 768px)' /> -->
     <link rel="stylesheet" type="text/css"
         href="//rainbowit.net/themes/inbio/wp-content/cache/wpfc-minified/kbnrzp80/44qc8.css"
         media="only screen and (max-width: 768px)" />
-    <!-- <link rel='stylesheet' id='woocommerce-general-css' href='https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=7.1.0' type='text/css' media='all' /> -->
     <link rel="stylesheet" type="text/css"
         href="//rainbowit.net/themes/inbio/wp-content/cache/wpfc-minified/9htizuwm/44qc8.css" media="all" />
     <style id='woocommerce-inline-inline-css' type='text/css'>
@@ -3457,8 +3462,6 @@
             visibility: visible;
         }
     </style>
-    <!-- <link rel='stylesheet' id='elementor-icons-css' href='https://rainbowit.net/themes/inbio/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='elementor-frontend-css' href='https://rainbowit.net/themes/inbio/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.8.1' type='text/css' media='all' /> -->
     <link rel="stylesheet" type="text/css"
         href="//rainbowit.net/themes/inbio/wp-content/cache/wpfc-minified/q77xiqkd/44qc8.css" media="all" />
     <link rel='stylesheet' id='elementor-post-5-css'
@@ -3470,31 +3473,15 @@
     <link rel='stylesheet' id='inbio-gfonts-css'
         href='https://fonts.googleapis.com/css?family=Poppins%3Awght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C700%26display%3Dswap%7CMontserrat%3Awght%40400%2C500%2C600%2C700%2C800%26display%3Dswap&#038;subset=latin%2Clatin-ext&#038;ver=2.2.2'
         type='text/css' media='all' />
-    <!-- <link rel='stylesheet' id='slick-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/vendor/slick.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='slick-theme-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/vendor/slick-theme.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='bootstrap-min-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/vendor/bootstrap.min.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='aos-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/vendor/aos.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='font-awesome-free-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/vendor/fontawesome.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='feature-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/plugins/feature.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='inbio-woocommerce-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/rainbow-woocommerce.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='magnific-popup-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/vendor/magnific-popup.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='plyr-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/vendor/plyr.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='inbio-style-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/css/style.css?ver=2.2.2' type='text/css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='inbio-one-style-css' href='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/style.css?ver=6.1.1' type='text/css' media='all' /> -->
     <link rel="stylesheet" type="text/css"
         href="//rainbowit.net/themes/inbio/wp-content/cache/wpfc-minified/foi7w94m/44qc8.css" media="all" />
     <link rel='stylesheet' id='google-fonts-1-css'
         href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.1.1'
         type='text/css' media='all' />
-    <!-- <link rel='stylesheet' id='elementor-icons-rbt-feather-icons-css' href='https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-elements/assets/css/feather.css?ver=1.0.0' type='text/css' media='all' /> -->
     <link rel="stylesheet" type="text/css"
         href="//rainbowit.net/themes/inbio/wp-content/cache/wpfc-minified/8jqybyg1/44qc8.css" media="all" />
     <script src='//rainbowit.net/themes/inbio/wp-content/cache/wpfc-minified/8uqyfeh2/44qc8.js' type="text/javascript">
     </script>
-    <!-- <script type='text/javascript' src='https://rainbowit.net/themes/inbio/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script> -->
-    <!-- <script type='text/javascript' src='https://rainbowit.net/themes/inbio/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script> -->
-    <!-- <script type='text/javascript' src='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/js/vendor/jquery.magnific-popup.min.js?ver=2.2.2' id='jquery-magnific-popup-min-js'></script> -->
-    <!-- <script type='text/javascript' src='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/js/vendor/plyr.min.js?ver=2.2.2' id='plyr-js'></script> -->
     <link rel="https://api.w.org/" href="https://rainbowit.net/themes/inbio/wp-json/" />
     <link rel="alternate" type="application/json" href="https://rainbowit.net/themes/inbio/wp-json/wp/v2/pages/7" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD"
@@ -3510,14 +3497,8 @@
     <link rel="alternate" type="text/xml+oembed"
         href="https://rainbowit.net/themes/inbio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frainbowit.net%2Fthemes%2Finbio%2F&#038;format=xml" />
     <meta name="generator" content="Redux 4.3.20" />
-    <!--Customizer CSS-->
     <style type="text/css">
-        /************************************************************************************
-* General
-************************************************************************************/
-        /* Primary [#ff014f] */
     </style>
-    <!--/Customizer CSS-->
     <noscript>
         <style>
             .woocommerce-product-gallery {
@@ -3673,951 +3654,11 @@
             </filter>
         </defs>
     </svg>
-    <!-- Start Right Demo  -->
-
-    <!-- End Right Demo  -->
-    <!-- Start Modal Area  -->
-    <div class="demo-modal-area">
-        <div class="wrapper">
-            <div class="rn-modal-inner">
-                <div class="close-icon">
-                    <button class="demo-close-btn" title="Close"><span class="feather-x"></span></button>
-                </div>
-                <div class="demo-top text-center">
-                    <h2 class="title">InBio</h2>
-                    <p class="subtitle">Its a personal portfolio WordPress theme that can run a website authentic
-                        manner.</p>
-                    <div class="move-feature-area mb--30">
-                        <div class="wrapper">
-                            <ul class="mv-feature-list scroll-animation scroll-right-left">
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Drag &amp; Drop Editor</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Responsive &amp; Retina</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">SEO Optimized</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">30+ Custom Elements</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">It’s Super Fast</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">One-click Demo Import</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">High Quality Support</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Fully Customizable</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Easy Lifetime Update</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Google Font</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Unlimited Colors</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Mobile-first design</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Big Template For Personal Portfolio</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">Cross-browser compatible</div>
-                                </li>
-                                <li class="mv-feature">
-                                    <div class="icon"><i class="feather-check"></i></div>
-                                    <div class="text">One Page &amp; Multipage Option</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <ul class="popuptab-area nav nav-tabs" id="popuptab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active demo-dark" id="demodark-tab" data-toggle="tab" href="#demodark"
-                            role="tab" aria-controls="demodark" aria-selected="true">Dark Demo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link demo-light" id="demolight-tab" data-toggle="tab" href="#demolight" role="tab"
-                            aria-controls="demolight" aria-selected="false">Light Demo</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="popuptabContent">
-                    <div class="tab-pane show active" id="demodark" role="tabpanel" aria-labelledby="demodark-tab">
-                        <div class="content">
-                            <div class="row">
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/main-demo.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a href="https://rainbowit.net/themes/inbio/">Main
-                                                        Demo</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner ">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/technician/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/index-technician.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/technician/">Technician</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner badge-1">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/designer-two/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/designer-two-dark.png"
-                                                        alt="Designer Two">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/designer-two/">Designer
-                                                        Two</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner ">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/model/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-model-v2.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/model/">Model</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner badge-2">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/consulting/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-consulting.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/consulting/">Consulting</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner ">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/fashion-designer/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/fashion-designer.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/fashion-designer/">Fashion
-                                                        Designer</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/developer/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/developer.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/developer/">Developer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/instructor-fitness/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/instructor-fitness.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/instructor-fitness/">Fitness
-                                                        Instructor</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner ">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/web-developer/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-model.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/web-developer/">Web
-                                                        Developer</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/designer/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-video.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/designer/">Designer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/content-writer/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/text-rotet.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/content-writer/">Content
-                                                        Writter</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner ">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/instructor/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/index-boxed.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/instructor/">Instructor</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner badge-2">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/freelancer/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-sticky.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/freelancer/">Freelancer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/photographer/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/index-bg-image.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/photographer/">Photographer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/politician/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/front-end.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/politician/">Politician</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo coming-soon">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="#">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/coming-soon.png"
-                                                        alt="Personal Portfolio">
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a href="#">Accountant</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo coming-soon">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="#">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/coming-soon.png"
-                                                        alt="Personal Portfolio">
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a href="#">Tailor</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo coming-soon">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="#">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/coming-soon.png"
-                                                        alt="Personal Portfolio">
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a href="#">Marketer</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="demolight" role="tabpanel" aria-labelledby="demolight-tab">
-                        <div class="content">
-                            <div class="row">
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/home-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/main-demo-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/home-light/">Main
-                                                        Demo</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner ">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/technician-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/index-technician-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/technician-light/">Technician</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner badge-1">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/designer-two-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/designer-two-light.png"
-                                                        alt="Designer Two Light">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/designer-two-light/">Designer
-                                                        Two Light</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/model-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-model-v2-white.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/model-light/">Model</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner badge-2">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/consulting-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-consulting-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/consulting-light/">Consulting</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner ">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/fashion-designer-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/fashion-designer-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/fashion-designer-light/">Fashion
-                                                        Designer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/developer-light/ ">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/developer-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/developer-light/ ">Developer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/instructor-fitness-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/instructor-fitness-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/instructor-fitness-light/">Fitness
-                                                        Instructor</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner ">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/web-developer-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-model-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/web-developer-light/">Web
-                                                        Developer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/designer-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-video-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/designer-light/">Designer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/content-writer-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/text-rotet-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/content-writer-light/">Content
-                                                        Writter</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/instructor-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/index-boxed-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/instructor-light/">Instructor</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner badge-2">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/freelancer-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/home-sticky-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/freelancer-light/">Freelancer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/photographer-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/index-bg-image-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/photographer-light/">Photographer</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="https://rainbowit.net/themes/inbio/politician-light/">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/front-end-white-version.png"
-                                                        alt="Personal Portfolio">
-                                                    <span class="overlay-content">
-                                                        <span class="overlay-text">View Demo <i
-                                                                class="feather-external-link"></i></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a
-                                                        href="https://rainbowit.net/themes/inbio/politician-light/">Politician</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo coming-soon">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="#">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/coming-soon.png"
-                                                        alt="Personal Portfolio">
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a href="#">Accountant Light</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo coming-soon">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="#">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/coming-soon.png"
-                                                        alt="Personal Portfolio">
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a href="#">Tailor Light</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                                <!-- Start Single Content  -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="single-demo coming-soon">
-                                        <div class="inner">
-                                            <div class="thumbnail">
-                                                <a href="#">
-                                                    <img class="w-100"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/plugins/rainbow-demo/assets/demo/coming-soon.png"
-                                                        alt="Personal Portfolio">
-                                                </a>
-                                            </div>
-                                            <div class="inner">
-                                                <h3 class="title"><a href="#">Marketer Light</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Content  -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Modal Area  -->
     <div id="main-wrapper" class="main-wrapper">
-        <header
-            class="rn-header header-style-1 haeder-default black-logo-version header-right-align       header--sticky">
+        <header class="rn-header header-style-1 haeder-default black-logo-version header-right-align header--sticky">
             <div id="rainbow-sticky-placeholder"></div>
             <div class="header-wrapper rn-popup-mobile-menu m--0">
                 <div class="row align-items-center">
-                    <!-- Start Header Left -->
                     <div class="col-lg-2 col-6">
                         <div class="header-left">
                             <div class="logo">
@@ -4667,68 +3708,11 @@
                                     </span>
                                 </div>
                             </div>
-                            <!-- End Header Right  -->
                         </div>
                     </div>
-                    <!-- End Header Center -->
                 </div>
             </div>
         </header>
-        <!-- Start Popup Mobile Menu  -->
-        <div class="popup-mobile-menu is-mobile-onepage">
-            <div class="inner">
-                <div class="menu-top">
-                    <div class="menu-header">
-                        <a class="logo" href="https://rainbowit.net/themes/inbio/" title="InBio" rel="home">
-                            <img src="https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/images/logo/logos-circle.png"
-                                alt="InBio">
-                        </a>
-                        <div class="close-button">
-                            <button class="close-menu-activation close"><i class="feather feather-x"></i></button>
-                        </div>
-                    </div>
-                    <p class="description">Inbio is a all in one personal portfolio WordPress theme. You can customize
-                        everything.</p>
-                </div>
-                <div class="content">
-                    <nav id="sideNavMobile" class="mainmenu-nav navbar-example2 d-xl-block">
-                        <ul id="menu-home-1" class="primary-menu nav nav-pills onepagenav">
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a
-                                    href="#home">Home</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-161"><a
-                                    href="#features">Features</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-162"><a
-                                    href="#portfolio">Portfolio</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-163"><a
-                                    href="#resume">Resume</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3695"><a
-                                    href="#testimonial">Testimonial</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-164"><a
-                                    href="#clients">Clients</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-165"><a
-                                    href="#pricing">Pricing</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166"><a
-                                    href="#blog">Blog</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-167"><a
-                                    href="#contacts">Contacts</a></li>
-                        </ul>
-                    </nav>
-                    <div class="social-area">
-                        <div class="name">PING ME</div>
-                        <div class="social-icone skill-share no_has_Shadow ">
-                            <a href="" title="facebook.">
-                                <i class="rbt feather-twitter"></i> </a>
-                            <a href="" title="twitter">
-                                <i class="rbt feather-facebook"></i> </a>
-                            <a href="" title="linkedin.">
-                                <i class="rbt feather-linkedin"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Popup Mobile Menu  -->
-        <!-- Start Page Wrapper -->
         <main class="main-page-wrapper ">
             <div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7">
                 <section
@@ -4748,10 +3732,8 @@
                                                     <span class="subtitle">Welcome to my Tech World</span>
                                                     <h1 class="title">Hi, I’m <span>BalajiRam</span><br>
                                                         <span class="header-caption">
-                                                            <!-- type headline start-->
                                                             <span class="cd-headline clip is-full-width">
                                                                 <span>a </span>
-                                                                <!-- ROTATING TEXT -->
                                                                 <span class="cd-words-wrapper">
                                                                     <b class="is-hidden">Software Developer.</b>
                                                                     <b class="is-visible">Passionate Coder.</b>
@@ -4767,11 +3749,12 @@
                                                                 applications for different platforms.I am a quick
                                                                 learner with a fun,outgoing personality.</span></p>
                                                     </div>
-                                                    <br/>
-                                                    <!-- <br/> -->
+                                                    <br />
                                                     <div class="button_hover">
-                                                        <a href="https://drive.google.com/file/d/119rYETxbjokvJ0KB45xEGfWHxXSbbsPb/view?usp=sharing" target="_blank"><button style="border-radius:12px;width:28%;
-                                                    background-color: #ff014f;color:white;padding: 12px;">Download Resume</button></a>
+                                                        <a href="https://drive.google.com/file/d/119rYETxbjokvJ0KB45xEGfWHxXSbbsPb/view?usp=sharing"
+                                                            target="_blank"><button style="border-radius:12px;width:28%;
+                                                    background-color: #ff014f;color:white;padding: 12px;">Download
+                                                                Resume</button></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -4796,19 +3779,42 @@
                                                                 <ul
                                                                     class="social-share skill-share justify-content-left  d-flex liststyle has_Shadow ">
                                                                     <li class="Facebook">
-                                                                        <a href="https://www.facebook.com/balaji.ram.90281/" target="_blank"
-                                                                            title="Facebook"> <i
-                                                                                class="rbt feather-facebook"></i> </a>
+                                                                        <a href="https://www.facebook.com/balaji.ram.90281/"
+                                                                            target="_blank" title="Facebook">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                width="16" height="16"
+                                                                                fill="currentColor"
+                                                                                class="bi bi-facebook"
+                                                                                viewBox="0 0 16 16">
+                                                                                <path
+                                                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                                                            </svg>
+                                                                        </a>
                                                                     </li>
                                                                     <li class="Github">
-                                                                        <a href="https://github.com/Balaji1252" target="_blank"
-                                                                            title="GitHub"> <i
-                                                                                class="rbt feather-github"></i> </a>
+                                                                        <a href="https://github.com/Balaji1252"
+                                                                            target="_blank" title="GitHub">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                width="16" height="16"
+                                                                                fill="currentColor" class="bi bi-github"
+                                                                                viewBox="0 0 16 16">
+                                                                                <path
+                                                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                                                            </svg>
+                                                                        </a>
                                                                     </li>
                                                                     <li class="Linkedin">
-                                                                        <a href="https://www.linkedin.com/in/balajiram-n-a8407a233/" target="_blank"
-                                                                            title="Linkedin"> <i
-                                                                                class="rbt feather-linkedin"></i> </a>
+                                                                        <a href="https://www.linkedin.com/in/balajiram-n-a8407a233/"
+                                                                            target="_blank" title="LinkedIn">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                width="16" height="16"
+                                                                                fill="currentColor"
+                                                                                class="bi bi-linkedin"
+                                                                                viewBox="0 0 16 16">
+                                                                                <path
+                                                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                                                            </svg>
+                                                                        </a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -4831,22 +3837,38 @@
                                                                 <ul
                                                                     class="social-share skill-share justify-content-left  d-flex liststyle has_Shadow ">
                                                                     <li class="invision">
-                                                                        <img decoding="async" width="128" height="128"
-                                                                            src="icons8-level-up-your-coding-skills-and-quickly-land-a-job-60.png"
-                                                                            class="attachment-full size-full"
-                                                                            alt="invision" loading="lazy" /> 
-                                                                            <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-codechef-16.png">
-                                                                        </li>
+                                                                        <a href="https://leetcode.com/user2849eC/"
+                                                                            target="_blank" title="LeetCode">
+                                                                            <img decoding="async" width="128"
+                                                                                height="128"
+                                                                                src="icons8-level-up-your-coding-skills-and-quickly-land-a-job-60.png"
+                                                                                class="attachment-full size-full"
+                                                                                alt="invision" loading="lazy" />
+                                                                            <link type="image/png" sizes="16x16"
+                                                                                rel="icon"
+                                                                                href=".../icons8-codechef-16.png">
+                                                                        </a>
+                                                                    </li>
                                                                     <li class="sketch">
-                                                                        <img decoding="async" width="128" height="130"
-                                                                            src="icons8-codechef-500.png"
-                                                                            class="attachment-full size-full"
-                                                                            alt="icons-02" loading="lazy" /> </li>
+                                                                        <a href="https://www.codechef.com/users/balaji_08"
+                                                                            target="_blank" title="CodeChef">
+                                                                            <img decoding="async" width="128"
+                                                                                height="130"
+                                                                                src="icons8-codechef-500.png"
+                                                                                class="attachment-full size-full"
+                                                                                alt="icons-02" loading="lazy" />
+                                                                        </a>
+                                                                    </li>
                                                                     <li class="figma">
-                                                                        <img decoding="async" width="128" height="192"
-                                                                            src="icons8-hackerrank-60.png"
-                                                                            class="attachment-full size-full"
-                                                                            alt="figma" loading="lazy" /> </li>
+                                                                        <a href="https://www.hackerrank.com/balajiram_n20201"
+                                                                            target="_blank" title="HackerRank">
+                                                                            <img decoding="async" width="128"
+                                                                                height="192"
+                                                                                src="icons8-hackerrank-60.png"
+                                                                                class="attachment-full size-full"
+                                                                                alt="figma" loading="lazy" />
+                                                                        </a>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -4869,10 +3891,7 @@
                                             <div class="thumbnail">
                                                 <div class="inner">
                                                     <img width="700" height="960"
-                                                        src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/banner-01.png"
-                                                        class="attachment-full size-full" alt="Banner image 01"
-                                                        decoding="async" loading="lazy"
-                                                        srcset="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/banner-01.png 700w, https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/banner-01-219x300.png 219w"
+                                                        src="https://media.licdn.com/dms/image/D5603AQEBmm-5ZdkS1g/profile-displayphoto-shrink_400_400/0/1664942273328?e=1677715200&v=beta&t=ycD8lkWNCG41RpwjX435oEOrlKGyljDP-EIv4D2Gkw8"
                                                         sizes="(max-width: 700px) 100vw, 700px" /> </div>
                                             </div>
                                         </div>
@@ -4916,7 +3935,6 @@
                                     <div class="elementor-widget-container">
                                         <div class="section-title text-left " data-aos="fade-up" data-aos-duration="500"
                                             data-aos-delay="100" data-aos-once="true">
-                                            <!-- <span class="subtitle sub-title">Features</span> -->
                                             <h2 class="title sec-title">I Work On
                                             </h2>
                                         </div>
@@ -5191,7 +4209,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- Modal Portfolio Body area Start -->
                                                     <div class="modal fade newportfolio-modal modal-layout-left"
                                                         id="exampleModalCenter-63" tabindex="-1" role="dialog"
                                                         aria-hidden="true" data-modalwrapper="portfolio-modal">
@@ -5316,10 +4333,8 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <!-- End of .text-content -->
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row media-->
                                                                     <div class="row">
                                                                         <div class="col-md-12">
                                                                             <div class="rb-separator pb--30 pt--30">
@@ -5433,12 +4448,10 @@
                                                                                 with the debt amount.</p>
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row body-->
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- End Modal Portfolio area -->
                                                 </div>
                                                 <div
                                                     class="col-lg-4 col-md-6 col-sm-12 col-12 rb-items mt--50 mt_md--30 mt_sm--30 preview-type-video">
@@ -5485,7 +4498,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- Modal Portfolio Body area Start -->
                                                     <div class="modal fade newportfolio-modal modal-layout-center"
                                                         id="exampleModalCenter-65" tabindex="-1" role="dialog"
                                                         aria-hidden="true" data-modalwrapper="portfolio-modal">
@@ -5569,10 +4581,8 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <!-- End of .text-content -->
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row media-->
                                                                     <div class="row">
                                                                         <div class="col-md-12">
                                                                             <div class="rb-separator pb--30 pt--30">
@@ -5609,12 +4619,10 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row body-->
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- End Modal Portfolio area -->
                                                 </div>
                                                 <div
                                                     class="col-lg-4 col-md-6 col-sm-12 col-12 rb-items mt--50 mt_md--30 mt_sm--30 preview-type-link">
@@ -5658,7 +4666,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- Modal Portfolio Body area Start -->
                                                     <div class="modal fade newportfolio-modal modal-layout-left"
                                                         id="exampleModalCenter-66" tabindex="-1" role="dialog"
                                                         aria-hidden="true" data-modalwrapper="portfolio-modal">
@@ -5731,10 +4738,8 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <!-- End of .text-content -->
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row media-->
                                                                     <div class="row">
                                                                         <div class="col-md-12">
                                                                             <div class="rb-separator pb--30 pt--30">
@@ -5750,12 +4755,10 @@
                                                                                 in connection with the debt amount.</p>
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row body-->
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- End Modal Portfolio area -->
                                                 </div>
                                                 <div
                                                     class="col-lg-4 col-md-6 col-sm-12 col-12 rb-items mt--50 mt_md--30 mt_sm--30 preview-type-image">
@@ -5800,7 +4803,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- Modal Portfolio Body area Start -->
                                                     <div class="modal fade newportfolio-modal modal-layout-right"
                                                         id="exampleModalCenter-67" tabindex="-1" role="dialog"
                                                         aria-hidden="true" data-modalwrapper="portfolio-modal">
@@ -5872,10 +4874,8 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <!-- End of .text-content -->
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row media-->
                                                                     <div class="row">
                                                                         <div class="col-md-12">
                                                                             <div class="rb-separator pb--30 pt--30">
@@ -6023,12 +5023,10 @@
                                                                                 with the debt amount.</p>
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row body-->
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- End Modal Portfolio area -->
                                                 </div>
                                                 <div
                                                     class="col-lg-4 col-md-6 col-sm-12 col-12 rb-items mt--50 mt_md--30 mt_sm--30 preview-type-gallery">
@@ -6073,7 +5071,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- Modal Portfolio Body area Start -->
                                                     <div class="modal fade newportfolio-modal modal-layout-center"
                                                         id="exampleModalCenter-68" tabindex="-1" role="dialog"
                                                         aria-hidden="true" data-modalwrapper="portfolio-modal">
@@ -6179,10 +5176,8 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <!-- End of .text-content -->
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row media-->
                                                                     <div class="row">
                                                                         <div class="col-md-12">
                                                                             <div class="rb-separator pb--30 pt--30">
@@ -6330,12 +5325,10 @@
                                                                                 with the debt amount.</p>
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row body-->
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- End Modal Portfolio area -->
                                                 </div>
                                                 <div
                                                     class="col-lg-4 col-md-6 col-sm-12 col-12 rb-items mt--50 mt_md--30 mt_sm--30 ">
@@ -6380,7 +5373,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- Modal Portfolio Body area Start -->
                                                     <div class="modal fade newportfolio-modal modal-layout-left"
                                                         id="exampleModalCenter-69" tabindex="-1" role="dialog"
                                                         aria-hidden="true" data-modalwrapper="portfolio-modal">
@@ -6453,10 +5445,8 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <!-- End of .text-content -->
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row media-->
                                                                     <div class="row">
                                                                         <div class="col-md-12">
                                                                             <div class="rb-separator pb--30 pt--30">
@@ -6604,12 +5594,10 @@
                                                                                 with the debt amount.</p>
                                                                         </div>
                                                                     </div>
-                                                                    <!-- End of .row body-->
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- End Modal Portfolio area -->
                                                 </div>
                                             </div>
                                         </div>
@@ -6653,7 +5641,6 @@
                                     <div class="elementor-widget-container">
                                         <div class="section-title text-center " data-aos="fade-up"
                                             data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
-                                            <!-- <span class="subtitle sub-title">7+ Years of Experience</span> -->
                                             <h2 class="title sec-title">My Resume
                                             </h2>
                                         </div>
@@ -6703,12 +5690,9 @@
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="personal-experience-inner">
                                                                                     <div class="content">
-                                                                                        <!-- <span class="subtitle">2017 -
-                                                                                            2024</span> -->
                                                                                         <h4 class="maintitle">Education
                                                                                         </h4>
                                                                                         <div class="experience-list">
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -6748,7 +5732,6 @@
                                                                                                         of culture. </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -6789,7 +5772,6 @@
                                                                                                         education.</p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -6848,12 +5830,9 @@
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="personal-experience-inner">
                                                                                     <div class="content">
-                                                                                        <!-- <span class="subtitle">2010 -
-                                                                                            2022</span> -->
                                                                                         <h4 class="maintitle">My
                                                                                             Interests</h4>
                                                                                         <div class="experience-list">
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -6866,17 +5845,9 @@
                                                                                                                 Data
                                                                                                                 Science
                                                                                                             </h4>
-                                                                                                            <!-- <span
-                                                                                                                class="list-sub-title">Google
-                                                                                                                Out Tech
-                                                                                                                - (2017
-                                                                                                                -
-                                                                                                                Present)</span> -->
+
                                                                                                         </div>
-                                                                                                        <!-- <div
-                                                                                                            class="date-of-time">
-                                                                                                            <span>USA</span>
-                                                                                                        </div> -->
+
                                                                                                     </div>
                                                                                                     <p
                                                                                                         class="description">
@@ -6900,7 +5871,6 @@
                                                                                                     </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -6913,17 +5883,9 @@
                                                                                                                 Artificial
                                                                                                                 Intelligence
                                                                                                             </h4>
-                                                                                                            <!-- <span
-                                                                                                                class="list-sub-title">Apple
-                                                                                                                Developer
-                                                                                                                Team -
-                                                                                                                (2012 -
-                                                                                                                2016)</span> -->
+
                                                                                                         </div>
-                                                                                                        <!-- <div
-                                                                                                            class="date-of-time">
-                                                                                                            <span>MALAYSIA</span>
-                                                                                                        </div> -->
+
                                                                                                     </div>
                                                                                                     <p
                                                                                                         class="description">
@@ -6942,7 +5904,6 @@
                                                                                                         humans.</p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -6954,16 +5915,9 @@
                                                                                                                 class="list-title">
                                                                                                                 Designing
                                                                                                             </h4>
-                                                                                                            <!-- <span
-                                                                                                                class="list-sub-title">Nike
-                                                                                                                - (2020
-                                                                                                                -
-                                                                                                                2011)</span> -->
+
                                                                                                         </div>
-                                                                                                        <!-- <div
-                                                                                                            class="date-of-time">
-                                                                                                            <span>INDIA</span>
-                                                                                                        </div> -->
+
                                                                                                     </div>
                                                                                                     <p
                                                                                                         class="description">
@@ -7020,8 +5974,6 @@
                                                                                         data-aos-once="true"
                                                                                         class="progress-wrapper">
                                                                                         <div class="content">
-                                                                                            <!-- <span
-                                                                                                class="subtitle">Features</span> -->
                                                                                             <h4 class="maintitle">Non
                                                                                                 Technical
                                                                                                 Skills</h4>
@@ -7143,8 +6095,7 @@
                                                                                         data-aos-once="true"
                                                                                         class="progress-wrapper">
                                                                                         <div class="content">
-                                                                                            <!-- <span
-                                                                                                class="subtitle">Features</span> -->
+
                                                                                             <h4 class="maintitle">
                                                                                                 Technical Skills</h4>
                                                                                             <div
@@ -7272,12 +6223,8 @@
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="personal-experience-inner">
                                                                                     <div class="content">
-                                                                                        <!-- <span class="subtitle">2010 -
-                                                                                            2022</span> -->
-                                                                                        <!-- <h4 class="maintitle">Job
-                                                                                            Experience</h4> -->
+
                                                                                         <div class="experience-list">
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7324,7 +6271,6 @@
                                                                                                     </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7362,40 +6308,8 @@
                                                                                                         programming.</p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
-                                                                                            <!-- <div
-                                                                                                class="resume-single-list">
-                                                                                                <div class="inner">
-                                                                                                    <div
-                                                                                                        class="heading">
-                                                                                                        <div
-                                                                                                            class="title">
-                                                                                                            <h4
-                                                                                                                class="list-title">
-                                                                                                                Member
-                                                                                                            </h4>
-                                                                                                            <span
-                                                                                                                class="list-sub-title">Intelligent Computing Club (College Club)</span>
-                                                                                                        </div>
-                                                                                                        <div
-                                                                                                            class="date-of-time">
-                                                                                                            <span>Present</span>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <p
-                                                                                                        class="description">
-                                                                                                        The India
-                                                                                                        economy has
-                                                                                                        grown strongly
-                                                                                                        over recent
-                                                                                                        years, having -->
-                                                                                            <!-- transformed
-                                                                                                        itself from a
-                                                                                                        producer and
-                                                                                                        innovation-based
-                                                                                                        economy.</p>
-                                                                                                </div>
-                                                                                            </div> -->
+
+
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -7413,12 +6327,8 @@
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="personal-experience-inner">
                                                                                     <div class="content">
-                                                                                        <!-- <span class="subtitle">2001 -
-                                                                                            2020</span>
-                                                                                        <h4 class="maintitle">Trainer
-                                                                                            Experience</h4> -->
+
                                                                                         <div class="experience-list">
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7459,7 +6369,6 @@
                                                                                                         humans. </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7498,46 +6407,7 @@
                                                                                                         content. </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
-                                                                                            <!-- <div
-                                                                                                class="resume-single-list">
-                                                                                                <div class="inner">
-                                                                                                    <div
-                                                                                                        class="heading">
-                                                                                                        <div
-                                                                                                            class="title">
-                                                                                                            <h4
-                                                                                                                class="list-title">
-                                                                                                                School
-                                                                                                                Teacher
-                                                                                                            </h4>
-                                                                                                            <span
-                                                                                                                class="list-sub-title">Kingstar
-                                                                                                                Secondary
-                                                                                                                School
-                                                                                                                (2001 -
-                                                                                                                2010)</span>
-                                                                                                        </div>
-                                                                                                        <div
-                                                                                                            class="date-of-time">
-                                                                                                            <span>NEVADA</span>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <p
-                                                                                                        class="description">
-                                                                                                        Secondary
-                                                                                                        education or
-                                                                                                        post-primary
-                                                                                                        education covers
-                                                                                                        two phases on
-                                                                                                        the
-                                                                                                        International
-                                                                                                        Standard
-                                                                                                        Classification -->
-                                                                                            <!-- of Education
-                                                                                                        scale.</p>
-                                                                                                </div> -->
-                                                                                            <!-- </div> -->
+
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -7567,11 +6437,8 @@
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="personal-experience-inner">
                                                                                     <div class="content">
-                                                                                        <!-- <span class="subtitle"> 2007 -
-                                                                                            2010</span> -->
-                                                                                        <!-- <h4 class="maintitle">My Certifications</h4> -->
+
                                                                                         <div class="experience-list">
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7614,7 +6481,6 @@
                                                                                                         calculations.
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7664,7 +6530,6 @@
                                                                                                     </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7722,12 +6587,8 @@
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="personal-experience-inner">
                                                                                     <div class="content">
-                                                                                        <!-- <span class="subtitle">2007 -
-                                                                                            2010</span>
-                                                                                        <h4 class="maintitle">Job
-                                                                                            Experience</h4> -->
+
                                                                                         <div class="experience-list">
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7771,7 +6632,6 @@
                                                                                                     </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7814,7 +6674,6 @@
                                                                                                     </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- Start Single List  -->
                                                                                             <div
                                                                                                 class="resume-single-list">
                                                                                                 <div class="inner">
@@ -7908,7 +6767,6 @@
                                     <div class="elementor-widget-container">
                                         <div class="section-title text-center " data-aos="fade-up"
                                             data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
-                                            <!-- <span class="subtitle sub-title">Contact</span> -->
                                             <h2 class="title sec-title">Connect With Me
                                             </h2>
                                         </div>
@@ -8013,7 +6871,6 @@
                                                                                                 class="wpcf7-form-control wpcf7-text referer-page"
                                                                                                 aria-invalid="false"></span>
                                                                                     </p>
-                                                                                    <!-- Chimpmail extension by Renzo Johnson -->
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="form-group"><label
@@ -8096,7 +6953,6 @@
                                                                                                 class="wpcf7-form-control wpcf7-text referer-page"
                                                                                                 aria-invalid="false"></span>
                                                                                     </p>
-                                                                                    <!-- Chimpmail extension by Renzo Johnson -->
                                                                                 </div>
                                                                                 <div class="col-lg-12">
                                                                                     <input type="submit"
@@ -8120,8 +6976,7 @@
                     </div>
                 </section>
             </div>
-        </main><!-- End Page Wrapper -->
-        <!-- Back to top end -->
+        </main>
     </div>
     <script type="text/javascript">
         (function () {
@@ -8179,14 +7034,12 @@
         src='https://rainbowit.net/themes/inbio/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.4'
         id='swv-js'></script>
     <script type='text/javascript' id='contact-form-7-js-extra'>
-        /* <![CDATA[ */
         var wpcf7 = {
             "api": {
                 "root": "https:\/\/rainbowit.net\/themes\/inbio\/wp-json\/",
                 "namespace": "contact-form-7\/v1"
             }
         };
-        /* ]]> */
     </script>
     <script type='text/javascript'
         src='https://rainbowit.net/themes/inbio/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.4'
@@ -8195,7 +7048,6 @@
         src='https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.1.0'
         id='jquery-blockui-js'></script>
     <script type='text/javascript' id='wc-add-to-cart-js-extra'>
-        /* <![CDATA[ */
         var wc_add_to_cart_params = {
             "ajax_url": "\/themes\/inbio\/wp-admin\/admin-ajax.php",
             "wc_ajax_url": "\/themes\/inbio\/?wc-ajax=%%endpoint%%",
@@ -8204,7 +7056,6 @@
             "is_cart": "",
             "cart_redirect_after_add": "no"
         };
-        /* ]]> */
     </script>
     <script type='text/javascript'
         src='https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=7.1.0'
@@ -8213,18 +7064,15 @@
         src='https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.7.1.0'
         id='js-cookie-js'></script>
     <script type='text/javascript' id='woocommerce-js-extra'>
-        /* <![CDATA[ */
         var woocommerce_params = {
             "ajax_url": "\/themes\/inbio\/wp-admin\/admin-ajax.php",
             "wc_ajax_url": "\/themes\/inbio\/?wc-ajax=%%endpoint%%"
         };
-        /* ]]> */
     </script>
     <script type='text/javascript'
         src='https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.1.0'
         id='woocommerce-js'></script>
     <script type='text/javascript' id='wc-cart-fragments-js-extra'>
-        /* <![CDATA[ */
         var wc_cart_fragments_params = {
             "ajax_url": "\/themes\/inbio\/wp-admin\/admin-ajax.php",
             "wc_ajax_url": "\/themes\/inbio\/?wc-ajax=%%endpoint%%",
@@ -8232,7 +7080,6 @@
             "fragment_name": "wc_fragments_67c93ddd16d5f985a1ab7e338e28dbd5",
             "request_timeout": "5000"
         };
-        /* ]]> */
     </script>
     <script type='text/javascript'
         src='https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=7.1.0'
@@ -8256,11 +7103,9 @@
         src='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/js/vendor/aos.js?ver=2.2.2' id='aos-js'>
     </script>
     <script type='text/javascript' id='jquery-one-page-nav-js-extra'>
-        /* <![CDATA[ */
         var RainbowBavObj = {
             "header_offset": "110"
         };
-        /* ]]> */
     </script>
     <script type='text/javascript'
         src='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/js/vendor/jquery-one-page-nav.js?ver=2.2.2'
@@ -8272,13 +7117,11 @@
         src='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/js/main.js?ver=2.2.2' id='inbio-main-js'>
     </script>
     <script type='text/javascript' id='inbio-has-elementor-js-extra'>
-        /* <![CDATA[ */
         var RainbowObj = {
             "ajaxurl": "https:\/\/rainbowit.net\/themes\/inbio\/wp-admin\/admin-ajax.php",
             "hasAdminBar": "0",
             "rtl": "no"
         };
-        /* ]]> */
     </script>
     <script type='text/javascript'
         src='https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/js/has-elementor.js?ver=2.2.2'
@@ -8413,5 +7256,4 @@
         src='https://rainbowit.net/themes/inbio/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.8.1'
         id='elementor-frontend-js'></script>
 </body>
-
 </html>
